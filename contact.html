@@ -4,18 +4,34 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Haukai Restaurant - Contact</title>
     </head>
     <body>
         <!-- Nav bar placed at top of page -->
         <div class="w3-top">
-            <div class="w3-bar w3-sand">
-                <a href="./index.html" class="w3-bar-item w3-button">Home</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-                <a href="./hours.html" class="w3-bar-item w3-button">Hours</a>
-                <a href="./menu.html" class="w3-bar-item w3-button">Menu</a>
-                <a href="./reservations.html" class="w3-bar-item w3-button">Reservations</a> 
+            <div class="w3-bar w3-sand w3-card" id="navbar">
+                <!-- Large and medium screen menu items -->
+                <a href="./index.html" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Home</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Contact</a>
+                <a href="./hours.html" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Hours</a>
+                <a href="./menu.html" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Menu</a>
+                <a href="./reservations.html" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Reservations</a>
+                <!-- Mobile nav bar items -->
+                <a href="./index.html" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium">
+                    <i class="fa fa-home"></i>
+                </a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menu_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
+        </div>
+
+        <!-- Mobile drop down menu items -->
+        <div id="mobileMenu" class="w3-bar-block w3-sand w3-hide w3-hide-medium w3-hide-large">
+            <a href="./hours.html" class="w3-bar-item w3-button">Hours</a>
+            <a href="./menu.html" class="w3-bar-item w3-button">Menu</a>
+            <a href="./reservations.html" class="w3-bar-item w3-button">Reservations</a> 
         </div>
 
         <header class="w3-display-container w3-content w3-wide" style="max-width:100%">
@@ -37,5 +53,17 @@
                 <p>Address: 1 Island Street<br>Kerikeri<br>Bay of Islands 6023</p>
             </div>
         </div>
+
+        <script>
+            function menu_open() {
+                var x = document.getElementById("mobileMenu");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+            }
+        </script>
+
     </body>
 </html>
