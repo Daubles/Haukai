@@ -29,7 +29,7 @@ h1{
     letter-spacing: 5px;
 }
 
-h3{
+h4{
     color: #9C4722;
 }
 
@@ -44,6 +44,6 @@ h3{
     letter-spacing: 5px;
 }
 
-#about{
+#about, #menuappmain, #menudessert{
     border-bottom: 2px solid #282D3C;
 }
