@@ -3,36 +3,42 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- w3 stylesheet for formatting -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Stylesheet for menu logos -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+        <!-- Additional self-made stylesheet for colouring and text -->
+        <link rel="stylesheet" href="./default.css">
+        <!-- Font stylesheet -->
+        <link href='https://fonts.googleapis.com/css?family=Merriweather Sans' rel='stylesheet'>
         <title>Haukai Restaurant - Homepage</title>
     </head>
+
     <body>
         <!-- Nav bar placed at top of page -->
         <div class="w3-top">
-            <div class="w3-bar w3-sand w3-card" id="navbar">
+            <div class="w3-bar w3-card w3-large" id="navbar">
                 <!-- Large and medium screen menu items -->
-                <a href="#home" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Home</a>
-                <a href="./contact.html" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Contact</a>
-                <a href="./hours.html" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Hours</a>
-                <a href="./menu.html" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Menu</a>
-                <a href="./reservations.html" class="w3-bar-item w3-button w3-hide-small" style="width: 20%">Reservations</a>
+                <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-none" id="activenavoption">Home</a>
+                <a href="./contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-none" id="navoption">Contact</a>
+                <a href="./hours.html" class="w3-bar-item w3-button w3-hide-small w3-hover-none" id="navoption">Hours</a>
+                <a href="./menu.html" class="w3-bar-item w3-button w3-hide-small w3-hover-none" id="navoption">Menu</a>
+                <a href="./reservations.html" class="w3-bar-item w3-button w3-hide-small w3-hover-none" id="navoption">Reservations</a>
                 <!-- Mobile nav bar items -->
-                <a href="#home" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium">
+                <a href="./index.html" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium w3-hover-none">
                     <i class="fa fa-home"></i>
                 </a>
-                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menu_open()">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-none" onclick="menu_open()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
 
             <!-- Mobile drop down menu items -->
             <div id="mobileMenu" class="w3-bar-block w3-sand w3-hide w3-hide-medium w3-hide-large">
-                <a href="./contact.html" class="w3-bar-item w3-button">Contact</a>
-                <a href="./hours.html" class="w3-bar-item w3-button">Hours</a>
-                <a href="./menu.html" class="w3-bar-item w3-button">Menu</a>
-                <a href="./reservations.html" class="w3-bar-item w3-button">Reservations</a> 
+                <a href="./contact.html" class="w3-bar-item w3-button w3-hover-none">Contact</a>
+                <a href="./hours.html" class="w3-bar-item w3-button w3-hover-none">Hours</a>
+                <a href="./menu.html" class="w3-bar-item w3-button w3-hover-none">Menu</a>
+                <a href="./reservations.html" class="w3-bar-item w3-button w3-hover-none">Reservations</a> 
             </div>
         </div>
 
@@ -40,8 +46,8 @@
         <header class="w3-display-container w3-content w3-wide" style="max-width:100%">
             <img class="w3-image w3-hide-small" src="./images/index-banner-image-web.jpg" alt="burger restaurant dish" style="width:100%">
             <img class="w3-image w3-hide-medium w3-hide-large" src="./images/index-banner-image-mobile.jpg" alt="restaurant dish" style="width:100%">
-            <div class="w3-display-right">
-                <span class="w3-xxxlarge w3-2020-navy-blazer">Haukai Restaurant</span>
+            <div class="w3-display-right" id="bannertext">
+                <span class="w3-xxxlarge">Haukai <span class="w3-hide-small">Restaurant</span></span>
             </div>
         </header>
 
