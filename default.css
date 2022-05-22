@@ -1,38 +1,51 @@
+/* Colours nav bar */
 #navbar{
     background-color: #EFE1CE;
 }
 
+/* Colours menu drop down */
+#mobilemenu{
+    background-color: #EFE1CE;
+}
+
+/* spaces active navbar page and colours it's border */
 #activenavoption{
     width: 20%;
     border-bottom: 2px solid #9C4722;
 }
 
+/* Spaces and colours all other navbar options */
 #navoption{
     width: 20%;
     border-bottom: 2px solid #282D3C;
     color: #282D3C;
 }
 
+/* colours navbar option that is hovered over */
 #navoption:hover{
     border-bottom: 2px solid #9C4722;
 }
 
+/* Styles main body */
 body{
     background-color: #EFE1CE;
     font-family: 'Merriweather Sans', Arial, serif;
     color: #282D3C;
 }
 
+/* Styles all H1 headings */
 h1{
     color: #282D3C;
     text-align: center;
     letter-spacing: 5px;
 }
 
+/* Styles all H4 headings */
 h4{
     color: #9C4722;
 }
 
+/* Styles text over banner image */
 #bannertext{
     font-family: 'Merriweather Sans', Arial, serif;
     border-left: 3px solid #9C4722;
@@ -44,10 +57,12 @@ h4{
     letter-spacing: 5px;
 }
 
+/* Adds bottom border below multiple content sections */
 #about, #menuappmain, #menudessert{
     border-bottom: 2px solid #282D3C;
 }
 
+/* Adds top border to footer */
 footer{
     border-top: 2px solid #282D3C;
 }
